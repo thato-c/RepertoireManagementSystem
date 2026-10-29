@@ -1,6 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Repertoire_Management_System.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<RepertoireDBContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Dev"))
+);
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
