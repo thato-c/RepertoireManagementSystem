@@ -1,8 +1,9 @@
-﻿@model Song
+﻿@using Repertoire_Management_System.ViewModels
+@model SongViewModel
 
 <h1>Add a Song</h1>
 
-<form asp-controller="Song" asp-action="Create" method="post">
+<form asp-controller="Song" asp-action="Post" method="post">
     @Html.AntiForgeryToken()
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 

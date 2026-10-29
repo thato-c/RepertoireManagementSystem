@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Repertoire_Management_System.Data;
 using Repertoire_Management_System.Models;
+using Repertoire_Management_System.ViewModels;
 
 namespace Repertoire_Management_System.Controllers
 {
@@ -32,6 +33,25 @@ namespace Repertoire_Management_System.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Post(SongViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                // Map the viewModel to the Model
+                var song = new Models.Song
+                {
+                    Title = viewModel.Title,
+                    Artist = viewModel.Artist,
+                };
+                context.Songs.Add(song);
+                context.SaveChanges();
+                return RedirectToAction("Index", "Song");
+            }
+            return View(viewModel);
         }
     }
 }
