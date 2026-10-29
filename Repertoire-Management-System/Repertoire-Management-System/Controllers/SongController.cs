@@ -27,5 +27,11 @@ namespace Repertoire_Management_System.Controllers
 
             return View(songs);
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
