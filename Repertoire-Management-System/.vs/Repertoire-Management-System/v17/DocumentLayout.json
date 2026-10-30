@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\data\\repertoiredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\data\\repertoiredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\migrations\\20261029152624_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\migrations\\20261029152624_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\migrations\\repertoiredbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\migrations\\repertoiredbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -47,6 +63,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20261030102752_RepertoireManagementUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Migrations\\20261030102752_RepertoireManagementUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T10:28:03.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepertoireDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Data\\RepertoireDBContext.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Data\\RepertoireDBContext.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Data\\RepertoireDBContext.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Data\\RepertoireDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T10:16:45.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20261029152624_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261029152624_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Migrations\\20261029152624_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261029152624_InitialCreate.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Migrations\\20261029152624_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T10:16:42.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RepertoireDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\RepertoireDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Migrations\\RepertoireDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\RepertoireDBContextModelSnapshot.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Migrations\\RepertoireDBContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T10:16:26.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\appsettings.json",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\appsettings.json",
@@ -54,20 +122,20 @@
               "RelativeToolTip": "Repertoire-Management-System\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-29T13:00:44.458Z",
+              "WhenOpened": "2026-10-30T10:15:01.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Program.cs",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Program.cs",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Program.cs",
               "RelativeToolTip": "Repertoire-Management-System\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T13:00:35.608Z",
+              "WhenOpened": "2026-10-30T10:14:13.839Z",
               "EditorCaption": ""
             }
           ]
