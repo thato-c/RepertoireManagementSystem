@@ -3,23 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\controllers\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\controllers\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RepertoireManagementSystem/True/SqlTable/dbo.Song.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\migrations\\20261030111929_add state tracking to song model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\migrations\\20261030111929_add state tracking to song model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 830,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,63 +51,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SongController.cs",
-              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\SongController.cs",
-              "RelativeDocumentMoniker": "Repertoire-Management-System\\Controllers\\SongController.cs",
-              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\SongController.cs",
-              "RelativeToolTip": "Repertoire-Management-System\\Controllers\\SongController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "SongStateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:22:53.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Song [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RepertoireManagementSystem/True/SqlTable/dbo.Song.sql",
-              "ToolTip": "dbo.Song [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-10-30T11:21:45.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20261030111929_Add state tracking to Song Model.cs",
-              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261030111929_Add state tracking to Song Model.cs",
-              "RelativeDocumentMoniker": "Repertoire-Management-System\\Migrations\\20261030111929_Add state tracking to Song Model.cs",
-              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261030111929_Add state tracking to Song Model.cs",
-              "RelativeToolTip": "Repertoire-Management-System\\Migrations\\20261030111929_Add state tracking to Song Model.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:19:30.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Song.cs",
-              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Models\\Song.cs",
-              "RelativeDocumentMoniker": "Repertoire-Management-System\\Models\\Song.cs",
-              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Models\\Song.cs",
-              "RelativeToolTip": "Repertoire-Management-System\\Models\\Song.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:17:22.793Z",
+              "WhenOpened": "2026-10-30T12:20:38.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SongController.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\SongController.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Controllers\\SongController.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\SongController.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Controllers\\SongController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T12:11:10.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "RelativeToolTip": "Repertoire-Management-System\\Views\\Song\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-30T10:41:16.724Z",
+              "WhenOpened": "2026-10-30T12:09:28.909Z",
               "EditorCaption": ""
             }
           ]

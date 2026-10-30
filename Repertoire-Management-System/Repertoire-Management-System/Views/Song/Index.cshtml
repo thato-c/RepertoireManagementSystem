@@ -1,11 +1,12 @@
-﻿@model List<Song>
+﻿@using Repertoire_Management_System.ViewModels
+@model SongStateAssignmentViewModel
 @{
     ViewData["Title"] = "Song Library";
 }
 
 <a asp-controller="Song" asp-action="Create">Add a Song</a>
 
-@if (Model != null)
+@* @if (Model != null)
 {
     <table class="table">
         <tr>
@@ -26,4 +27,36 @@
 else
 {
     <p>@ViewBag.Message</p>
-}
+} *@
+
+<form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.SongStates.Count; i++)
+            {
+                <tr>
+                    <input type="hidden" asp-for="SongStates[i].SongId" />
+                    <td>
+                        @Model.SongStates[i].Title
+                    </td>
+                    <td>
+                        @Model.SongStates[i].Artist
+                    </td>
+                    <td>
+                        <select asp-for="SongStates[i].SelectedState" 
+                        asp-items="Model.SongStateOptions" class="form-control">
+                        </select>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</form>

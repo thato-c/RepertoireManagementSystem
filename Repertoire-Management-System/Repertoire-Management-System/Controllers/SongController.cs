@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Repertoire_Management_System.Data;
 using Repertoire_Management_System.Models;
 using Repertoire_Management_System.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace Repertoire_Management_System.Controllers
 {
@@ -15,6 +17,17 @@ namespace Repertoire_Management_System.Controllers
             this.context = _context;
         }
 
+        private List<SelectListItem> GetSongStateOptions()
+        {
+            return new List<SelectListItem>
+            {
+                new SelectListItem { Value = "To Learn", Text = "To Learn" },
+                new SelectListItem { Value = "Acquiring", Text = "Acquiring" },
+                new SelectListItem { Value = "Rehearsal", Text = "Rehearsal" },
+
+            };
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -25,8 +38,25 @@ namespace Repertoire_Management_System.Controllers
                 ViewBag.Message = "Songs not found.";
                 return View();
             }
+            else
+            {
+                var viewModel = new SongStateAssignmentViewModel
+                {
+                    // Populate the shared master list
+                    SongStateOptions = GetSongStateOptions(),
 
-            return View(songs);
+                    // Map each entity explicitly to a row
+                    SongStates = songs.Select(song => new SongStateViewModel
+                    {
+                        SongId = song.SongId,
+                        Title = song.Title,
+                        Artist = song.Artist,
+                        SelectedState = song.State,
+                    }).ToList()
+                };
+
+                return View(viewModel);
+            }
         }
 
         [HttpGet]
@@ -46,6 +76,7 @@ namespace Repertoire_Management_System.Controllers
                 {
                     Title = viewModel.Title,
                     Artist = viewModel.Artist,
+                    State = "To Learn",
                 };
                 context.Songs.Add(song);
                 context.SaveChanges();
