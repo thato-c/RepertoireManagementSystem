@@ -7,5 +7,7 @@
         public string Title {  get; set; } = string.Empty;
 
         public string Artist { get; set; } = string.Empty;
+
+        public ICollection<RehearsalSessionTrial> Trials { get; set; } = new List<RehearsalSessionTrial>();
     }
 }
