@@ -46,7 +46,7 @@ namespace Repertoire_Management_System.Controllers
                     SongStateOptions = GetSongStateOptions(),
 
                     // Map each entity explicitly to a row
-                    SongStates = songs.Select(song => new SongStateViewModel
+                    Songs = songs.Select(song => new SongStateViewModel
                     {
                         SongId = song.SongId,
                         Title = song.Title,

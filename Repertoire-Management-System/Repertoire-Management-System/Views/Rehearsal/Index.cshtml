@@ -19,38 +19,38 @@
             </tr>
         </thead>
         <tbody>
-            @for (int i = 0; i < Model.RehearsalSession.Count; i++)
+            @for (int i = 0; i < Model.RehearsalSessionSongs.Count; i++)
             {
                 <tr>
-                    <input type="hidden" asp-for="RehearsalSession[i].SongId" />
+                    <input type="hidden" asp-for="RehearsalSessionSongs[i].SongId" />
                     <td>
-                        @Model.RehearsalSession[i].Title
+                        @Model.RehearsalSessionSongs[i].Title
                     </td>
                     <td>
-                        @Model.RehearsalSession[i].Artist
+                        @Model.RehearsalSessionSongs[i].Artist
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].FirstTrial" 
+                        <select asp-for="RehearsalSessionSongs[i].FirstTrial" 
                         asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].SecondTrial" 
+                        <select asp-for="RehearsalSessionSongs[i].SecondTrial" 
                         asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].ThirdTrial"
+                        <select asp-for="RehearsalSessionSongs[i].ThirdTrial"
                                 asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].FourthTrial"
+                        <select asp-for="RehearsalSessionSongs[i].FourthTrial"
                                 asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].FifthTrial"
+                        <select asp-for="RehearsalSessionSongs[i].FifthTrial"
                                 asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                     <td>
-                        <select asp-for="RehearsalSession[i].SixthTrial"
+                        <select asp-for="RehearsalSessionSongs[i].SixthTrial"
                                 asp-items="Model.TrialOptions" class="form-control"></select>
                     </td>
                 </tr>

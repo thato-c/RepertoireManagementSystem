@@ -46,7 +46,7 @@ namespace Repertoire_Management_System.Controllers
                     TrialOptions = GetTrialOptions(),
 
                     // Map each entity explicitly to a row
-                    RehearsalSession = songs.Select(song => new RehearsalSessionViewModel
+                    RehearsalSessionSongs = songs.Select(song => new RehearsalSessionViewModel
                     {
                         SongId = song.SongId,
                         Title = song.Title,

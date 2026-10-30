@@ -16,18 +16,18 @@
             </tr>
         </thead>
         <tbody>
-            @for (int i = 0; i < Model.SongStates.Count; i++)
+            @for (int i = 0; i < Model.Songs.Count; i++)
             {
                 <tr>
-                    <input type="hidden" asp-for="SongStates[i].SongId" />
+                    <input type="hidden" asp-for="Songs[i].SongId" />
                     <td>
-                        @Model.SongStates[i].Title
+                        @Model.Songs[i].Title
                     </td>
                     <td>
-                        @Model.SongStates[i].Artist
+                        @Model.Songs[i].Artist
                     </td>
                     <td>
-                        <select asp-for="SongStates[i].SelectedState" 
+                        <select asp-for="Songs[i].SelectedState" 
                         asp-items="Model.SongStateOptions" class="form-control">
                         </select>
                     </td>

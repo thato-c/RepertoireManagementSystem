@@ -16,7 +16,7 @@ namespace Repertoire_Management_System.ViewModels
     public class SongStateAssignmentViewModel
     {
         // List containing every row item in the table
-        public List<SongStateViewModel> SongStates { get; set; } = new();
+        public List<SongStateViewModel> Songs { get; set; } = new();
 
         // Shared List of options
         public List<SelectListItem> SongStateOptions { get; set; } = new();

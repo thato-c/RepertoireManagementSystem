@@ -20,7 +20,7 @@ namespace Repertoire_Management_System.ViewModels
     public class RehearsalSessionTrialViewModel
     {
         // List containing every row in the table
-        public List<RehearsalSessionViewModel> RehearsalSession { get; set; } = new();
+        public List<RehearsalSessionViewModel> RehearsalSessionSongs { get; set; } = new();
 
         // Shared List of options
         public List<SelectListItem> TrialOptions { get; set; } = new();

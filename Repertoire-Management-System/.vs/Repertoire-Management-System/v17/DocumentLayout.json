@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\viewmodels\\rehearsalsessionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\viewmodels\\rehearsalsessionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\controllers\\rehearsalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\controllers\\rehearsalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\rehearsal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\rehearsal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\controllers\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\controllers\\songcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\viewmodels\\songstateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\song\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\views\\rehearsal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\views\\rehearsal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\controllers\\rehearsalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\controllers\\rehearsalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\viewmodels\\rehearsalsessionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\viewmodels\\rehearsalsessionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 830,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,39 +62,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Rehearsal\\Index.cshtml",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Views\\Rehearsal\\Index.cshtml",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Rehearsal\\Index.cshtml",
               "RelativeToolTip": "Repertoire-Management-System\\Views\\Rehearsal\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC8AAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-30T15:09:35.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RehearsalController.cs",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\RehearsalController.cs",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Controllers\\RehearsalController.cs",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\RehearsalController.cs",
               "RelativeToolTip": "Repertoire-Management-System\\Controllers\\RehearsalController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABsAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAADAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T14:42:22.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "RehearsalSessionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\RehearsalSessionViewModel.cs",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\ViewModels\\RehearsalSessionViewModel.cs",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\RehearsalSessionViewModel.cs",
               "RelativeToolTip": "Repertoire-Management-System\\ViewModels\\RehearsalSessionViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T14:32:50.785Z",
               "EditorCaption": ""
@@ -103,24 +103,24 @@
         },
         {
           "DockedWidth": 830,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Views\\Song\\Index.cshtml",
               "RelativeToolTip": "Repertoire-Management-System\\Views\\Song\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-30T15:09:01.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "SongController.cs",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Controllers\\SongController.cs",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\Controllers\\SongController.cs",
@@ -133,13 +133,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "SongStateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
               "RelativeDocumentMoniker": "Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
               "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
               "RelativeToolTip": "Repertoire-Management-System\\ViewModels\\SongStateViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-30T14:33:06.049Z",
               "EditorCaption": ""
