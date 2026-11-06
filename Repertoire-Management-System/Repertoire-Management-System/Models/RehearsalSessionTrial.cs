@@ -10,7 +10,7 @@
 
         public int TrialNumber { get; set; }
 
-        public bool ReachedEnd { get; set; }
+        public string ReachedEnd { get; set; }
 
         public RehearsalSession RehearsalSession { get; set; } = new RehearsalSession();
 

@@ -64,5 +64,49 @@ namespace Repertoire_Management_System.Controllers
             }
             
         }
+
+        [HttpPost]
+        public async Task<IActionResult> RecordSession(RehearsalSessionViewModel model) 
+        {
+            var session = new RehearsalSession
+            {
+                Date = DateTime.Now,
+            };
+            context.rehearsalSessions.Add(session);
+            await context.SaveChangesAsync();
+
+            Guid sessionId = session.RehearsalSessionId;
+
+            var trials = new List<RehearsalSessionTrial>();
+
+            var results = new[]
+            {
+                model.FirstTrial,
+                model.SecondTrial,
+                model.ThirdTrial,
+                model.FourthTrial,
+                model.FifthTrial,
+                model.SixthTrial
+            };
+
+            for (int i = 0; i < results.Length; i++)
+            {
+                if (!string.IsNullOrWhiteSpace(results[i]))
+                {
+                    trials.Add(new RehearsalSessionTrial
+                    {
+                        SongId = model.SongId,
+                        RehearsalSessionId = sessionId,
+                        TrialNumber = i + 1,
+                        ReachedEnd = results[i]
+                    });
+                }
+            }
+
+            context.rehearsalSessionTrials.AddRange(trials);
+            await context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
     }
 }

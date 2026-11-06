@@ -41,8 +41,9 @@ namespace Repertoire_Management_System.Migrations
                     b.Property<Guid>("RehearsalSessionTrialId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("ReachedEnd")
-                        .HasColumnType("bit");
+                    b.Property<string>("ReachedEnd")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("RehearsalSessionId")
                         .HasColumnType("uniqueidentifier");
