@@ -26,6 +26,16 @@ namespace Repertoire_Management_System.Controllers
             };
         }
 
+        public List<SelectListItem> GetSongClassOptions()
+        {
+            return new List<SelectListItem>
+            {
+                new SelectListItem{Value = "Development", Text = "Development"},
+                new SelectListItem{Value = "Refinement", Text = "Refinement"},
+                new SelectListItem{Value = "Availability Set", Text = "Availability Set"},
+            };
+        }
+
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -120,9 +130,24 @@ namespace Repertoire_Management_System.Controllers
             {
                 ViewBag.Message = "Songs not found";
                 return View();
-            }           
+            }
 
-            return View(songs);
+            var viewModel = new SongClassAssignmentViewModel
+            {
+                // Populate the shaared master list
+                SongClassOptions = GetSongClassOptions(),
+
+                // Map each entity explicitly to a row
+                Songs = songs.Select(song => new SongClassViewModel
+                {
+                    SongId = song.SongId,
+                    Title = song.Title,
+                    Artist = song.Artist,
+                    SelectedClass = song.Class,
+                }).ToList()
+            };
+
+            return View(viewModel);
         }
     }
 }

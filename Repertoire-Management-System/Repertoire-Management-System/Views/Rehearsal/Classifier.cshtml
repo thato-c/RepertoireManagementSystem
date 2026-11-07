@@ -1,29 +1,35 @@
-﻿@model IEnumerable<Repertoire_Management_System.Models.Song>
+﻿@using Repertoire_Management_System.ViewModels
+@model SongClassAssignmentViewModel
+@{
+    ViewData["Title"] = "Classification System";
+}
 
-@if (Model != null)
-{
-    <table class="table">
-        <thead>
+<table class="table">
+    <theadd>
+        <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Class</th>
+        </tr>
+    </theadd>
+    <tbody>
+        @for (int i = 0; i < Model.Songs.Count; i++)
+        {
             <tr>
-                <th>Name</th>
-                <th>Artist</th>
-                <th>Class</th>
+                <input type="hidden" asp-for="Songs[i].SongId" />
+                <td>
+                    @Model.Songs[i].Title
+                </td>
+                <td>
+                    @Model.Songs[i].Artist
+                </td>
+                <td>
+                    <select asp-for="Songs[i].SelectedClass" 
+                            asp-items="Model.SongClassOptions" 
+                            class="form-control">
+                    </select>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var song in Model)
-            {
-                <tr>
-                    <td>@song.Title</td>
-                    <td>@song.Artist</td>
-                    <td></td>
-                </tr>
-            }
-            <tr></tr>
-        </tbody>
-    </table>
-}
-else
-{
-    <p>@ViewBag.Message</p>
-}
+        }
+    </tbody>
+</table>
