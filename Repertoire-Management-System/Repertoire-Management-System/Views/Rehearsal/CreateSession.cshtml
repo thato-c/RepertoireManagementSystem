@@ -3,35 +3,38 @@
 
 @if (Model != null)
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Artist</th>
-                <th>Class</th>
-                <th>Selected</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (int i = 0; i < Model.SessionSongs.Count; i++)
-            {
+    <form asp-controller="" asp-action="" method="post">
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>
-                        @Model.SessionSongs[i].Title
-                    </td>
-                    <td>
-                        @Model.SessionSongs[i].Artist
-                    </td>
-                    <td>
-                        @Model.SessionSongs[i].Class
-                    </td>
-                    <td>
-                        <input asp-for="SessionSongs[i].IsSelected" class="form-check-input" name="IsSelected"/>
-                    </td>
+                    <th>Name</th>
+                    <th>Artist</th>
+                    <th>Class</th>
+                    <th>Selected</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.SessionSongs.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @Model.SessionSongs[i].Title
+                        </td>
+                        <td>
+                            @Model.SessionSongs[i].Artist
+                        </td>
+                        <td>
+                            @Model.SessionSongs[i].Class
+                        </td>
+                        <td>
+                            <input asp-for="SessionSongs[i].IsSelected" class="form-check-input" name="IsSelected" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button type="submit">Create a Session</button>
+    </form>
 }
 else
 {
