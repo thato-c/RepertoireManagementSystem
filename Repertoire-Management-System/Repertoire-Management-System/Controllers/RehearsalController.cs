@@ -108,5 +108,21 @@ namespace Repertoire_Management_System.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Classifier()
+        {
+            var songs = await context.Songs.AsNoTracking()
+                                           .Where(song => song.State == "Rehearsal")
+                                           .ToListAsync();
+
+            if (!songs.Any())
+            {
+                ViewBag.Message = "Songs not found";
+                return View();
+            }           
+
+            return View(songs);
+        }
     }
 }
