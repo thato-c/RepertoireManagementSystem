@@ -12,6 +12,7 @@ namespace Repertoire_Management_System.Data
         public DbSet<Song> Songs { get; set; }
         public DbSet<RehearsalSession> rehearsalSessions { get; set; }
         public DbSet<RehearsalSessionTrial> rehearsalSessionTrials { get; set; }
+        public DbSet<RehearsalSessionSong> rehearsalSessionSongs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +21,7 @@ namespace Repertoire_Management_System.Data
             modelBuilder.Entity<Song>().ToTable("Song");
             modelBuilder.Entity<RehearsalSession>().ToTable("RehearsalSession");
             modelBuilder.Entity<RehearsalSessionTrial>().ToTable("RehearsalSessionTrial");
+            modelBuilder.Entity<RehearsalSessionSong>().ToTable("RehearsalSessionSong");
 
             // Configure the relationship between Song and RehearsalSessionTrial
             modelBuilder.Entity<Song>()
@@ -32,6 +34,18 @@ namespace Repertoire_Management_System.Data
                 .HasMany(rehearsalSession => rehearsalSession.Trials)
                 .WithOne(rehearsalSessionTrial => rehearsalSessionTrial.RehearsalSession)
                 .HasForeignKey(rehearsalSessionTrial => rehearsalSessionTrial.RehearsalSessionTrialId);
+
+            // Configure the relationship between RehearsalSession and RehearsalSessionSong
+            modelBuilder.Entity<RehearsalSession>()
+                .HasMany(rehearsalSession => rehearsalSession.Songs)
+                .WithOne(rehearsalSessionSongs => rehearsalSessionSongs.RehearsalSession)
+                .HasForeignKey(rehearsalSessionSongs => rehearsalSessionSongs.RehearsalSessionId);
+
+            //Configure the relationship between Song and RehearsalSessionSong
+            modelBuilder.Entity<Song>()
+                .HasMany(song => song.Sessions)
+                .WithOne(rehearsalSessionSongs => rehearsalSessionSongs.Song)
+                .HasForeignKey(rehearsalSessionSongs => rehearsalSessionSongs.SongId);
         }
     }
 }

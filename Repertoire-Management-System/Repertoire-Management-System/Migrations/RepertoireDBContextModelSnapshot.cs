@@ -36,6 +36,27 @@ namespace Repertoire_Management_System.Migrations
                     b.ToTable("RehearsalSession", (string)null);
                 });
 
+            modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionSong", b =>
+                {
+                    b.Property<Guid>("RehearsalSessionSongId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RehearsalSessionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SongId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("RehearsalSessionSongId");
+
+                    b.HasIndex("RehearsalSessionId");
+
+                    b.HasIndex("SongId");
+
+                    b.ToTable("RehearsalSessionSong", (string)null);
+                });
+
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionTrial", b =>
                 {
                     b.Property<Guid>("RehearsalSessionTrialId")
@@ -88,6 +109,25 @@ namespace Repertoire_Management_System.Migrations
                     b.ToTable("Song", (string)null);
                 });
 
+            modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionSong", b =>
+                {
+                    b.HasOne("Repertoire_Management_System.Models.RehearsalSession", "RehearsalSession")
+                        .WithMany("Songs")
+                        .HasForeignKey("RehearsalSessionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Repertoire_Management_System.Models.Song", "Song")
+                        .WithMany("Sessions")
+                        .HasForeignKey("SongId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RehearsalSession");
+
+                    b.Navigation("Song");
+                });
+
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionTrial", b =>
                 {
                     b.HasOne("Repertoire_Management_System.Models.RehearsalSession", "RehearsalSession")
@@ -109,11 +149,15 @@ namespace Repertoire_Management_System.Migrations
 
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSession", b =>
                 {
+                    b.Navigation("Songs");
+
                     b.Navigation("Trials");
                 });
 
             modelBuilder.Entity("Repertoire_Management_System.Models.Song", b =>
                 {
+                    b.Navigation("Sessions");
+
                     b.Navigation("Trials");
                 });
 #pragma warning restore 612, 618

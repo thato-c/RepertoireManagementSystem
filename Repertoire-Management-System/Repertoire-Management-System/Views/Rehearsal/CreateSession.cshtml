@@ -3,7 +3,7 @@
 
 @if (Model != null)
 {
-    <form asp-controller="" asp-action="" method="post">
+    <form asp-controller="Rehearsal" asp-action="PostCreateSession" method="post">
         <table class="table">
             <thead>
                 <tr>
@@ -19,6 +19,7 @@
                     <tr>
                         <td>
                             @Model.SessionSongs[i].Title
+                            <input type="hidden" asp-for="SessionSongs[i].SongId" />
                         </td>
                         <td>
                             @Model.SessionSongs[i].Artist
@@ -27,7 +28,7 @@
                             @Model.SessionSongs[i].Class
                         </td>
                         <td>
-                            <input asp-for="SessionSongs[i].IsSelected" class="form-check-input" name="IsSelected" />
+                            <input asp-for="SessionSongs[i].IsSelected" class="form-check-input" />
                         </td>
                     </tr>
                 }

@@ -10,5 +10,7 @@ namespace Repertoire_Management_System.Models
         public DateTime Date { get; set; }
 
         public ICollection<RehearsalSessionTrial> Trials { get; set; } = new List<RehearsalSessionTrial>();
+
+        public ICollection<RehearsalSessionSong> Songs { get; set; } = new List<RehearsalSessionSong>();
     }
 }
