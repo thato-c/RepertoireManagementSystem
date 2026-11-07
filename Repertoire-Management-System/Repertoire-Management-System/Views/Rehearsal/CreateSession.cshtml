@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Repertoire_Management_System.Models.Song>
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var song in Model)
+            {
+                <tr>
+                    <td>@song.Title</td>
+                    <td>@song.Artist</td>
+                    <td>@song.Class</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>@ViewBag.Message</p>
+}
