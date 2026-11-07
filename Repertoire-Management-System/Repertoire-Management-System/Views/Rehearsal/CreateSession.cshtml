@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Repertoire_Management_System.Models.Song>
+﻿@using Repertoire_Management_System.ViewModels
+@model CreateSessionViewModel
 
 @if (Model != null)
 {
@@ -8,15 +9,25 @@
                 <th>Name</th>
                 <th>Artist</th>
                 <th>Class</th>
+                <th>Selected</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var song in Model)
+            @for (int i = 0; i < Model.SessionSongs.Count; i++)
             {
                 <tr>
-                    <td>@song.Title</td>
-                    <td>@song.Artist</td>
-                    <td>@song.Class</td>
+                    <td>
+                        @Model.SessionSongs[i].Title
+                    </td>
+                    <td>
+                        @Model.SessionSongs[i].Artist
+                    </td>
+                    <td>
+                        @Model.SessionSongs[i].Class
+                    </td>
+                    <td>
+                        <input asp-for="SessionSongs[i].IsSelected" class="form-check-input" name="IsSelected"/>
+                    </td>
                 </tr>
             }
         </tbody>

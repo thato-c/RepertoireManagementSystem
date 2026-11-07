@@ -163,7 +163,19 @@ namespace Repertoire_Management_System.Controllers
                 return View();
             }
 
-            return View(songs);
+            var viewModel = new CreateSessionViewModel
+            {
+                // Map each entity explicitly to a row
+                SessionSongs = songs.Select(song => new SessionViewModel
+                {
+                    SongId = song.SongId,
+                    Title = song.Title,
+                    Artist = song.Artist,
+                    IsSelected = false,
+                }).ToList()
+            };
+
+            return View(viewModel);
         }
     }
 }
