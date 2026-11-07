@@ -10,6 +10,8 @@
 
         public string State { get; set; } = string.Empty;
 
+        public string Class { get; set; } = string.Empty;
+
         public ICollection<RehearsalSessionTrial> Trials { get; set; } = new List<RehearsalSessionTrial>();
     }
 }

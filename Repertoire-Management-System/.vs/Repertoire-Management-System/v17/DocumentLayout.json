@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|c:\\users\\tchit\\onedrive\\repertoiremanagementsystem\\repertoire-management-system\\repertoire-management-system\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDA535B-0B5D-4D1B-960D-81388F398EAD}|Repertoire-Management-System\\Repertoire-Management-System.csproj|solutionrelative:repertoire-management-system\\models\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 830,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +43,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20261107110534_Add class tracking to song library.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Migrations\\20261107110534_Add class tracking to song library.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T11:05:40.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Song.cs",
+              "DocumentMoniker": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Models\\Song.cs",
+              "RelativeDocumentMoniker": "Repertoire-Management-System\\Models\\Song.cs",
+              "ToolTip": "C:\\Users\\tchit\\OneDrive\\RepertoireManagementSystem\\Repertoire-Management-System\\Repertoire-Management-System\\Models\\Song.cs",
+              "RelativeToolTip": "Repertoire-Management-System\\Models\\Song.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T10:57:58.827Z",
+              "EditorCaption": ""
             }
           ]
         }
