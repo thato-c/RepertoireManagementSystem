@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<Repertoire_Management_System.Models.RehearsalSession>
 
+<a asp-controller="Rehearsal" asp-action="CreateSession">Create a Session</a>
+
 @if (Model != null)
 {
     <table class="table">
@@ -12,7 +14,7 @@
             @foreach (var rehearsalSession in Model)
             {
                 <tr>
-                    <td>@rehearsalSession.RehearsalSessionId</td>
+                    <td>@rehearsalSession.Name</td>
                     <input type="hidden" value="@rehearsalSession.RehearsalSessionId" />
                 </tr>
             }

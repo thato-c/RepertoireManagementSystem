@@ -31,6 +31,10 @@ namespace Repertoire_Management_System.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("RehearsalSessionId");
 
                     b.ToTable("RehearsalSession", (string)null);

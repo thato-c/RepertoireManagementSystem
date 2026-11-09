@@ -4,6 +4,11 @@
 @if (Model != null)
 {
     <form asp-controller="Rehearsal" asp-action="PostCreateSession" method="post">
+        <div class="form-group">
+            <label asp-for="SessionName">Name</label>
+            <input asp-for="SessionName" class="form-control" />
+            <span asp-validation-for="SessionName" class="text-danger"></span>
+        </div>
         <table class="table">
             <thead>
                 <tr>

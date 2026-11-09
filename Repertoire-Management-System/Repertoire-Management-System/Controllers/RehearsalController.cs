@@ -183,27 +183,24 @@ namespace Repertoire_Management_System.Controllers
         {
             var session = new RehearsalSession
             {
+                Name = viewModel.SessionName,
                 Date = DateTime.Now,
             };
-            context.rehearsalSessions.Add(session);
-            await context.SaveChangesAsync();
-
-            Guid sessionId = session.RehearsalSessionId;
 
             var selectedSongs = viewModel.SessionSongs.Where(song => song.IsSelected).ToList();
 
             foreach (var song in selectedSongs)
             {
-                var sessionSong = new RehearsalSessionSong
+                session.Songs.Add(new RehearsalSessionSong
                 {
                     SongId = song.SongId,
-                    RehearsalSessionId = sessionId,
-                };
-                context.rehearsalSessionSongs.Add(sessionSong);
+                });
+                
             }
+            context.rehearsalSessions.Add(session);
             await context.SaveChangesAsync();         
 
-            return RedirectToAction("Classifier");
+            return RedirectToAction("GetSessions");
         }
 
         [HttpGet]

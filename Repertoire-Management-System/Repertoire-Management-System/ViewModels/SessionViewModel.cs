@@ -13,6 +13,9 @@
 
     public class CreateSessionViewModel
     {
+        // Captures the session name
+        public string SessionName { get; set; } = string.Empty;
+
         // List containing every row item in the table
         public List<SessionViewModel> SessionSongs { get; set; } = new();
     }
