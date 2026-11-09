@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Repertoire_Management_System.Models.RehearsalSession>
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var rehearsalSession in Model)
+            {
+                <tr>
+                    <td>@rehearsalSession.RehearsalSessionId</td>
+                    <input type="hidden" value="@rehearsalSession.RehearsalSessionId" />
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>@ViewBag.Message</p>
+}

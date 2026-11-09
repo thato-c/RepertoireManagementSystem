@@ -205,5 +205,19 @@ namespace Repertoire_Management_System.Controllers
 
             return RedirectToAction("Classifier");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetSessions()
+        {
+            var rehearsalSessions = await context.rehearsalSessions.AsNoTracking().ToListAsync();
+
+            if (!rehearsalSessions.Any())
+            {
+                ViewBag.Message = "Sessions not found";
+                return View();
+            }
+
+            return View(rehearsalSessions);
+        }
     }
 }
