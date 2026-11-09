@@ -216,5 +216,51 @@ namespace Repertoire_Management_System.Controllers
 
             return View(rehearsalSessions);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetSessionById(Guid? SessionId)
+        {
+            if (SessionId == null)
+            {
+                return NotFound();
+            }
+
+            var sessionSongs = await context.rehearsalSessionSongs.AsNoTracking()
+                .Where(sessionSong => sessionSong.RehearsalSessionId == SessionId)
+                .Include(sessionSong => sessionSong.Song)
+                .ToListAsync();
+
+            if (!sessionSongs.Any())
+            {
+                ViewBag.Message = "Songs not found";
+                return View();
+            }
+            else
+            {
+                var viewModel = new RehearsalSessionTrialViewModel
+                {
+                    // Populate the shared master List
+                    TrialOptions = GetTrialOptions(),
+
+                    // Map each entity explicitly to a row
+                    RehearsalSessionSongs = sessionSongs.Select(sessionSong => new RehearsalSessionViewModel
+                    {
+                        SongId = sessionSong.SongId,
+                        Title = sessionSong.Song.Title,
+                        Artist = sessionSong.Song.Artist,
+                        FirstTrial = "",
+                        SecondTrial = "",
+                        ThirdTrial = "",
+                        FourthTrial = "",
+                        FifthTrial = "",
+                        SixthTrial = "",
+                    }).ToList()
+                };
+
+                return View(viewModel);
+            }
+
+        }
+
     }
 }

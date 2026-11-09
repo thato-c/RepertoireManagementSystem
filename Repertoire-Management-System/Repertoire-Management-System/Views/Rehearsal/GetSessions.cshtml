@@ -8,6 +8,7 @@
         <thead>
             <tr>
                 <td>Name</td>
+                <td>Initiate</td>
             </tr>
         </thead>
         <tbody>
@@ -15,8 +16,11 @@
             {
                 <tr>
                     <td>@rehearsalSession.Name</td>
-                    <input type="hidden" value="@rehearsalSession.RehearsalSessionId" />
+                    <td>
+                        <a asp-controller="Rehearsal" asp-action="GetSessionById" asp-route-Sessionid="@rehearsalSession.RehearsalSessionId">Initiate</a>
+                    </td>
                 </tr>
+
             }
         </tbody>
     </table>
