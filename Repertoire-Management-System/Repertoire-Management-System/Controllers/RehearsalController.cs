@@ -225,10 +225,18 @@ namespace Repertoire_Management_System.Controllers
                 return NotFound();
             }
 
-            var sessionSongs = await context.rehearsalSessionSongs.AsNoTracking()
+            var sessionSongs = await context.rehearsalSessionSongs
                 .Where(sessionSong => sessionSong.RehearsalSessionId == SessionId)
                 .Include(sessionSong => sessionSong.Song)
                 .ToListAsync();
+
+            var test = sessionSongs.Select(sessionSong => new
+            {
+                sessionSong.SongId,
+                Song = sessionSong.Song,
+                Title = sessionSong.Song.Title,
+                Artist = sessionSong.Song.Artist,
+            }).ToList();
 
             if (!sessionSongs.Any())
             {

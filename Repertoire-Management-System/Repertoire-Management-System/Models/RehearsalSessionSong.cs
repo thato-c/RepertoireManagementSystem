@@ -8,8 +8,8 @@
 
         public Guid SongId { get; set; }
 
-        public RehearsalSession RehearsalSession { get; set; } = new RehearsalSession();
+        public RehearsalSession RehearsalSession { get; set; }
 
-        public Song Song { get; set; } = new Song();
+        public Song Song { get; set; }
     }
 }
