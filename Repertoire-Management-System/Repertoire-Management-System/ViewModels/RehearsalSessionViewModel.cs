@@ -4,7 +4,7 @@ namespace Repertoire_Management_System.ViewModels
 {
     public class RehearsalSessionViewModel
     {
-        public Guid SongId { get; set; }
+        public Guid SessionSongId { get; set; }
         public string Title { get; set; }
         public string Artist {  get; set; }
 

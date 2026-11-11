@@ -4,16 +4,12 @@
     {
         public Guid RehearsalSessionTrialId {  get; set; }
 
-        public Guid RehearsalSessionId { get; set; }
-
-        public Guid SongId { get; set; }
+        public Guid? RehearsalSessionSongId { get; set; }
 
         public int TrialNumber { get; set; }
 
         public string ReachedEnd { get; set; }
 
-        public RehearsalSession RehearsalSession { get; set; } = new RehearsalSession();
-
-        public Song Song { get; set; } = new Song();
+        public RehearsalSessionSong RehearsalSessionSong { get; set; }
     }
 }

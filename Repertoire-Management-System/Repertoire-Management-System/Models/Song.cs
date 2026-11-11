@@ -12,8 +12,6 @@
 
         public string Class { get; set; } = string.Empty;
 
-        public ICollection<RehearsalSessionTrial> Trials { get; set; } = new List<RehearsalSessionTrial>();
-
         public ICollection<RehearsalSessionSong> Sessions { get; set; } = new List<RehearsalSessionSong>();
     }
 }

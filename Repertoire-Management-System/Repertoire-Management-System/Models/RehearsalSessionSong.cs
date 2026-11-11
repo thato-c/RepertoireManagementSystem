@@ -11,5 +11,8 @@
         public RehearsalSession RehearsalSession { get; set; }
 
         public Song Song { get; set; }
+
+        public ICollection<RehearsalSessionTrial> Trials { get; set; } = new List<RehearsalSessionTrial>();
+
     }
 }

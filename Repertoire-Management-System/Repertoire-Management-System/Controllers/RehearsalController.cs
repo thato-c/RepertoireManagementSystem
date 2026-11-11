@@ -58,7 +58,7 @@ namespace Repertoire_Management_System.Controllers
                     // Map each entity explicitly to a row
                     RehearsalSessionSongs = songs.Select(song => new RehearsalSessionViewModel
                     {
-                        SongId = song.SongId,
+                        SessionSongId = song.SongId,
                         Title = song.Title,
                         Artist = song.Artist,
                         FirstTrial = "",
@@ -76,44 +76,37 @@ namespace Repertoire_Management_System.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> RecordSession(RehearsalSessionViewModel model) 
+        public async Task<IActionResult> RecordSession(RehearsalSessionTrialViewModel model) 
         {
-            var session = new RehearsalSession
-            {
-                Date = DateTime.Now,
-            };
-            context.rehearsalSessions.Add(session);
-            await context.SaveChangesAsync();
-
-            Guid sessionId = session.RehearsalSessionId;
-
             var trials = new List<RehearsalSessionTrial>();
 
-            var results = new[]
+            foreach (var song in model.RehearsalSessionSongs)
             {
-                model.FirstTrial,
-                model.SecondTrial,
-                model.ThirdTrial,
-                model.FourthTrial,
-                model.FifthTrial,
-                model.SixthTrial
-            };
-
-            for (int i = 0; i < results.Length; i++)
-            {
-                if (!string.IsNullOrWhiteSpace(results[i]))
+                var results = new[]
                 {
-                    trials.Add(new RehearsalSessionTrial
-                    {
-                        SongId = model.SongId,
-                        RehearsalSessionId = sessionId,
-                        TrialNumber = i + 1,
-                        ReachedEnd = results[i]
-                    });
-                }
-            }
+                    song.FirstTrial,
+                    song.SecondTrial,
+                    song.ThirdTrial,
+                    song.FourthTrial,
+                    song.FifthTrial,
+                    song.SixthTrial
+                };
 
-            context.rehearsalSessionTrials.AddRange(trials);
+                for (int i = 0; i < results.Length; i++)
+                {
+                    if (!string.IsNullOrWhiteSpace(results[i]))
+                    {
+                        trials.Add(new RehearsalSessionTrial
+                        {
+                            RehearsalSessionSongId = song.SessionSongId,
+                            TrialNumber = i + 1,
+                            ReachedEnd = results[i]
+                        });
+                    }
+                }
+                context.rehearsalSessionTrials.AddRange(trials);
+            }
+            
             await context.SaveChangesAsync();
 
             return RedirectToAction("Index");
@@ -230,14 +223,6 @@ namespace Repertoire_Management_System.Controllers
                 .Include(sessionSong => sessionSong.Song)
                 .ToListAsync();
 
-            var test = sessionSongs.Select(sessionSong => new
-            {
-                sessionSong.SongId,
-                Song = sessionSong.Song,
-                Title = sessionSong.Song.Title,
-                Artist = sessionSong.Song.Artist,
-            }).ToList();
-
             if (!sessionSongs.Any())
             {
                 ViewBag.Message = "Songs not found";
@@ -253,7 +238,7 @@ namespace Repertoire_Management_System.Controllers
                     // Map each entity explicitly to a row
                     RehearsalSessionSongs = sessionSongs.Select(sessionSong => new RehearsalSessionViewModel
                     {
-                        SongId = sessionSong.SongId,
+                        SessionSongId = sessionSong.RehearsalSessionSongId,
                         Title = sessionSong.Song.Title,
                         Artist = sessionSong.Song.Artist,
                         FirstTrial = "",

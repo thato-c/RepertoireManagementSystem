@@ -64,16 +64,14 @@ namespace Repertoire_Management_System.Migrations
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionTrial", b =>
                 {
                     b.Property<Guid>("RehearsalSessionTrialId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ReachedEnd")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RehearsalSessionId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("SongId")
+                    b.Property<Guid>("RehearsalSessionSongId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("TrialNumber")
@@ -81,7 +79,7 @@ namespace Repertoire_Management_System.Migrations
 
                     b.HasKey("RehearsalSessionTrialId");
 
-                    b.HasIndex("SongId");
+                    b.HasIndex("RehearsalSessionSongId");
 
                     b.ToTable("RehearsalSessionTrial", (string)null);
                 });
@@ -134,35 +132,28 @@ namespace Repertoire_Management_System.Migrations
 
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionTrial", b =>
                 {
-                    b.HasOne("Repertoire_Management_System.Models.RehearsalSession", "RehearsalSession")
+                    b.HasOne("Repertoire_Management_System.Models.RehearsalSessionSong", "RehearsalSessionSong")
                         .WithMany("Trials")
-                        .HasForeignKey("RehearsalSessionTrialId")
+                        .HasForeignKey("RehearsalSessionSongId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Repertoire_Management_System.Models.Song", "Song")
-                        .WithMany("Trials")
-                        .HasForeignKey("SongId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("RehearsalSession");
-
-                    b.Navigation("Song");
+                    b.Navigation("RehearsalSessionSong");
                 });
 
             modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSession", b =>
                 {
                     b.Navigation("Songs");
+                });
 
+            modelBuilder.Entity("Repertoire_Management_System.Models.RehearsalSessionSong", b =>
+                {
                     b.Navigation("Trials");
                 });
 
             modelBuilder.Entity("Repertoire_Management_System.Models.Song", b =>
                 {
                     b.Navigation("Sessions");
-
-                    b.Navigation("Trials");
                 });
 #pragma warning restore 612, 618
         }

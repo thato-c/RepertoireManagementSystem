@@ -21,12 +21,13 @@
         </tr>
     </thead>
     <tbody>
+        
         @for (int i = 0; i < Model.RehearsalSessionSongs.Count; i++)
         {
             <tr>
                 <form asp-action="RecordSession" method="post">
                 <td>
-                    <input type="hidden" asp-for="RehearsalSessionSongs[i].SongId" />
+                    <input type="hidden" asp-for="RehearsalSessionSongs[i].SessionSongId" />
                         @Model.RehearsalSessionSongs[i].Title
                 </td>
                 <td>
@@ -34,27 +35,27 @@
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].FirstTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="FirstTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].SecondTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="SecondTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].ThirdTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="ThirdTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].FourthTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="FourthTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].FifthTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="FifthTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <select asp-for="RehearsalSessionSongs[i].SixthTrial"
-                            asp-items="Model.TrialOptions" class="form-control" name="SixthTrial"></select>
+                            asp-items="Model.TrialOptions" class="form-control" ></select>
                 </td>
                 <td>
                     <button type="submit">Record</button>
